@@ -141,6 +141,11 @@ PRODUCT_PACKAGES += \
     Snap\
     GoogleCameraMod
 
+# IR_R
+PRODUCT_PACKAGES += \
+    Remote \
+    Remote_work
+
 ifneq ($(USE_PROPRIETARY_CAMERA),true)
 PRODUCT_PACKAGES += \
     camera.msm8952 \
