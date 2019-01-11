@@ -114,6 +114,32 @@ mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 mm.enable.qcom_parser=4194303
 
+persist.camera.HAL3.enabled=1
+camera.lowpower.record.enable=1
+vidc.enc.dcvs.extra-buff-count=2
+
+# Additional buffers shared between Camera and Video media.camera.ts.monotonic=1
+vidc.enc.disable.pq=1
+persist.camera.tnr.preview=1
+persist.camera.tnr.video=1 
+
+# Enable camera EIS3.0
+persist.camera.eis.enable=1
+persist.camera.is_type=5
+persist.camera.gzoom.at=0
+persist.camera.llv.fuse=2 
+
+# Enable camera ae saturation stats
+persist.camera.saturationext=1 
+
+# Camera gyro and laser sensor persist.camera.gyro.android=20 persist.camera.tof.direct=1 persist.camera.max.previewfps=30 persist.camera.sensor.hdr=1
+
+# Add an extra 10% saturation to display colors persist.sys.sf.color_saturation=1.1 
+
+# Enable CameraHAL perfd usage persist.camera.perfd.enable=true 
+
+# Enable Gcam FD Ensemble persist.camera.gcam.fd.ensemble=1
+
 # Netmgrd
 ro.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
